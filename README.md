@@ -9,10 +9,10 @@
 A simple Content Moderation System for Yii2 that allows you to Approve or Reject resources like posts, comments, etc.
 
 
-[![Latest Stable Version](https://poser.pugx.org/indifferentmoviegoer/yii2-moderation/v/stable)](https://packagist.org/packages/indifferentmoviegoer/yii2-moderation)
-[![Total Downloads](https://poser.pugx.org/indifferentmoviegoer/yii2-moderation/downloads)](https://packagist.org/packages/indifferentmoviegoer/yii2-moderation)
-[![License](https://poser.pugx.org/indifferentmoviegoer/yii2-moderation/license)](https://packagist.org/packages/indifferentmoviegoer/yii2-moderation)
-[![Build Status](https://travis-ci.org/indifferentmoviegoer/yii2-moderation.svg?branch=1.0)](https://travis-ci.org/indifferentmoviegoer/yii2-moderation)
+[![Latest Stable Version](https://poser.pugx.org/indifferend/yii2-moderation/v/stable)](https://packagist.org/packages/indifferend/yii2-moderation)
+[![Total Downloads](https://poser.pugx.org/indifferend/yii2-moderation/downloads)](https://packagist.org/packages/indifferend/yii2-moderation)
+[![License](https://poser.pugx.org/indifferend/yii2-moderation/license)](https://packagist.org/packages/indifferend/yii2-moderation)
+[![Build Status](https://travis-ci.org/indifferend/yii2-moderation.svg?branch=1.0)](https://travis-ci.org/indifferend/yii2-moderation)
 
 Installation
 ------------
@@ -22,13 +22,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist indifferentmoviegoer/yii2-moderation "*"
+php composer.phar require --prefer-dist indifferend/yii2-moderation "*"
 ```
 
 or add
 
 ```
-"indifferentmoviegoer/yii2-moderation": "*"
+"indifferend/yii2-moderation": "*"
 ```
 
 to the require section of your composer.json.
@@ -37,7 +37,7 @@ to the require section of your composer.json.
 Configuration
 -------------
 
-To enable moderation for a model, use the `indifferentmoviegoer\moderation\ModerationBehavior` behavior and add the `status` and `moderated_by` columns to your model's table.
+To enable moderation for a model, use the `indifferend\moderation\ModerationBehavior` behavior and add the `status` and `moderated_by` columns to your model's table.
 
 Create a migration to add the new columns. Example Migration:
 
@@ -75,7 +75,7 @@ class m161117_092603_add_moderation_columns_to_post_table extends Migration
 To use ModerationBehavior, insert the following code to your ActiveRecord class:
 
 ```php
-use indifferentmoviegoer\moderation\ModerationBehavior;
+use indifferend\moderation\ModerationBehavior;
 
 class Post extends ActiveRecord 
 {
@@ -97,7 +97,7 @@ If your attribute names are different, you may configure the [[statusAttribute]]
 properties like the following:
 
 ```php
-use indifferentmoviegoer\moderation\ModerationBehavior;
+use indifferend\moderation\ModerationBehavior;
 
 class Post extends ActiveRecord 
 {
@@ -152,7 +152,7 @@ $post->isPostponed(); // Check if a post is postponed
 
 #### Events
 
-By default [[indifferentmoviegoer\moderation\ModerationBehavior]] triggers [[indifferentmoviegoer\moderation\ModerationBehavior::EVENT_BEFORE_MODERATION]]
+By default [[indifferend\moderation\ModerationBehavior]] triggers [[indifferend\moderation\ModerationBehavior::EVENT_BEFORE_MODERATION]]
 
 You may attach the event handlers for this event to your ActiveRecord object:
 
@@ -166,7 +166,7 @@ $post->on(ModerationBehavior::EVENT_BEFORE_MODERATION, function ($event) {
 You may also handle these events inside your ActiveRecord class by declaring the corresponding method:
 
 ```php
-use indifferentmoviegoer\moderation\ModerationBehavior;
+use indifferend\moderation\ModerationBehavior;
 
 class Post extends ActiveRecord 
 {
@@ -194,7 +194,7 @@ class Post extends ActiveRecord
 `ModerationQuery` adds the ability of getting only approved, rejected, postponed or pending models. Usage example:
 
 ```php
-use indifferentmoviegoer\moderation\ModerationQuery;
+use indifferend\moderation\ModerationQuery;
 
 class Post extends ActiveRecord 
 {
@@ -222,5 +222,5 @@ Post::find()->approvedWithPending()->all() // It will return all Approved and Pe
 
 ## Support us
 
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/indifferentmoviegoer). 
+Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/indifferend). 
 All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.

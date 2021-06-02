@@ -1,6 +1,6 @@
 <?php
 
-namespace indifferentmoviegoer\moderation\tests;
+namespace indifferend\moderation\tests;
 
 use Yii;
 use yii\helpers\ArrayHelper;
@@ -47,7 +47,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
                     'scriptUrl' => 'index.php',
                 ],
                 'user' => [
-                    'identityClass' => 'indifferentmoviegoer\moderation\tests\data\User',
+                    'identityClass' => 'indifferend\moderation\tests\data\User',
                 ],
             ],
         ], $config));

@@ -1,14 +1,14 @@
 <?php
 
-namespace indifferentmoviegoer\moderation\tests;
+namespace indifferend\moderation\tests;
 
-use indifferentmoviegoer\moderation\ModerationBehavior;
-use indifferentmoviegoer\moderation\tests\data\Post;
+use indifferend\moderation\ModerationBehavior;
+use indifferend\moderation\tests\data\Post;
 
 /**
  * Class ModerationQueryTest
  *
- * @package indifferentmoviegoer\moderation\tests
+ * @package indifferend\moderation\tests
  */
 class ModerationQueryTest extends TestCase
 {

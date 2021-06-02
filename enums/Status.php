@@ -1,13 +1,13 @@
 <?php
 
-namespace indifferentmoviegoer\moderation\enums;
+namespace indifferend\moderation\enums;
 
-use indifferentmoviegoer\enum\helpers\BaseEnum;
+use indifferend\enum\helpers\BaseEnum;
 
 /**
  * Class Status
  *
- * @package indifferentmoviegoer\moderation\enums
+ * @package indifferend\moderation\enums
  */
 class Status extends BaseEnum
 {

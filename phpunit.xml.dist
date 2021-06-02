@@ -6,7 +6,7 @@
 		convertWarningsToExceptions="true"
 		stopOnFailure="false">
 		<testsuites>
-			<testsuite name="indifferentmoviegoer Test Suite">
+			<testsuite name="indifferend Test Suite">
 				<directory>./tests</directory>
 			</testsuite>
 		</testsuites>

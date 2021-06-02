@@ -1,5 +1,5 @@
 {
-    "name": "indifferentmoviegoer/yii2-moderation",
+    "name": "indifferend/yii2-moderation",
     "description": "A simple Content Moderation System for Yii2 that allows you to Approve or Reject resources like posts, comments, etc.",
     "type": "yii2-extension",
     "keywords": [
@@ -18,14 +18,14 @@
     "require": {
         "php": ">=7.1",
         "yiisoft/yii2": "~2.0.10",
-        "indifferentmoviegoer/yii2-enum": "*"
+        "indifferend/yii2-enum": "*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.0"
     },
     "autoload": {
         "psr-4": {
-            "indifferentmoviegoer\\moderation\\": ""
+            "indifferend\\moderation\\": ""
         }
     },
     "repositories": [

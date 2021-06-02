@@ -1,10 +1,10 @@
 <?php
 
-namespace indifferentmoviegoer\moderation\tests\data;
+namespace indifferend\moderation\tests\data;
 
 use yii\db\ActiveRecord;
-use indifferentmoviegoer\moderation\ModerationBehavior;
-use indifferentmoviegoer\moderation\ModerationQuery;
+use indifferend\moderation\ModerationBehavior;
+use indifferend\moderation\ModerationQuery;
 
 /**
  * Class Post
