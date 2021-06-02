@@ -20,9 +20,9 @@ class Status extends BaseEnum
      * @var array
      */
     public static $list = [
-        self::PENDING => 'Pending',
-        self::APPROVED => 'Approved',
-        self::REJECTED => 'Rejected',
-        self::POSTPONED => 'Postponed',
+        self::PENDING => 'Обработка',
+        self::APPROVED => 'Одобрено',
+        self::REJECTED => 'Отклонено',
+        self::POSTPONED => 'Отложено',
     ];
 }
