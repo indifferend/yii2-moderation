@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2mod\moderation;
+namespace indifferentmoviegoer\moderation;
 
 use Yii;
 use yii\db\ActiveQuery;
-use yii2mod\moderation\enums\Status;
+use indifferentmoviegoer\moderation\enums\Status;
 
 /**
  * ModerationQuery adds the ability of getting only approved, rejected, postponed or pending models.

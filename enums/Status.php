@@ -1,13 +1,13 @@
 <?php
 
-namespace yii2mod\moderation\enums;
+namespace indifferentmoviegoer\moderation\enums;
 
-use yii2mod\enum\helpers\BaseEnum;
+use indifferentmoviegoer\enum\helpers\BaseEnum;
 
 /**
  * Class Status
  *
- * @package yii2mod\moderation\enums
+ * @package indifferentmoviegoer\moderation\enums
  */
 class Status extends BaseEnum
 {

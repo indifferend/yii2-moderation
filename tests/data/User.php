@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\moderation\tests\data;
+namespace indifferentmoviegoer\moderation\tests\data;
 
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;

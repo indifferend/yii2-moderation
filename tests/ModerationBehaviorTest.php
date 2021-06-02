@@ -1,16 +1,16 @@
 <?php
 
-namespace yii2mod\moderation\tests;
+namespace indifferentmoviegoer\moderation\tests;
 
 use Yii;
-use yii2mod\moderation\ModerationBehavior;
-use yii2mod\moderation\tests\data\Post;
-use yii2mod\moderation\tests\data\User;
+use indifferentmoviegoer\moderation\ModerationBehavior;
+use indifferentmoviegoer\moderation\tests\data\Post;
+use indifferentmoviegoer\moderation\tests\data\User;
 
 /**
  * Class ModerationBehaviorTest
  *
- * @package yii2mod\moderation\tests
+ * @package indifferentmoviegoer\moderation\tests
  */
 class ModerationBehaviorTest extends TestCase
 {

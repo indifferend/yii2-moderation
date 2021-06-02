@@ -1,13 +1,13 @@
 <?php
 
-namespace yii2mod\moderation;
+namespace indifferentmoviegoer\moderation;
 
 use Yii;
 use yii\base\Behavior;
 use yii\base\ModelEvent;
 use yii\db\ActiveRecord;
 use yii\db\BaseActiveRecord;
-use yii2mod\moderation\enums\Status;
+use indifferentmoviegoer\moderation\enums\Status;
 
 /**
  * Class ModerationBehavior allows you to Approve or Reject resources like posts, comments, users, etc.
@@ -15,7 +15,7 @@ use yii2mod\moderation\enums\Status;
  * To use ModerationBehavior, insert the following code to your ActiveRecord class:
  *
  * ```php
- * use yii2mod\moderation\ModerationBehavior;
+ * use indifferentmoviegoer\moderation\ModerationBehavior;
  *
  * public function behaviors()
  * {
